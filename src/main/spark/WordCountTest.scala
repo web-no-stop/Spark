@@ -4,13 +4,14 @@ import org.apache.spark.{SparkConf, SparkContext}
 object WordCountTest {
   def main(args: Array[String]): Unit = {
     if (args.length != 2) {
+
       sys.error("Usage: spark.example.WordCount <input> <output>")
       System.exit(1)
     }
     val input_path = args(0).toString
     val output_path = args(1).toString
 
-    val conf = new SparkConf().setAppName("wordcount")
+    val conf = new SparkConf().setAppName("wordcount2")
     conf.set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
 
     val sc = new SparkContext(conf)
