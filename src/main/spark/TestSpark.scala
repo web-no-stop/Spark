@@ -10,6 +10,7 @@ object TestSpark {
     for(arg <- mappredRDD)
       print(arg+" ")
     println()
-    println("math is work")
+    println("分布式计算结束")
+
   }
 }
