@@ -4,7 +4,6 @@ import org.apache.spark.{SparkConf, SparkContext}
 object WordCountTest {
   def main(args: Array[String]): Unit = {
     if (args.length != 2) {
-
       sys.error("Usage: spark.example.WordCount <input> <output>")
       System.exit(1)
     }
